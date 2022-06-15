@@ -1,0 +1,35 @@
+createPet:
+  handler: src/modules/pets/function/petHandler.create
+  events:
+    - http:
+        method: post
+        path: create-pet
+        cors: true
+getAllPet:
+  handler: src/modules/pets/function/petHandler.gets
+  events:
+    - http:
+        method: get
+        path: get-pet
+        cors: true
+getPet:
+  handler: src/modules/pets/function/petHandler.getById
+  events:
+    - http:
+        method: get
+        path: get-pet/{petId}
+        cors: true
+updatePet:
+  handler: src/modules/pets/function/petHandler.update
+  events:
+    - http:
+        method: put
+        path: update-pet/{petId}
+        cors: true
+deletePet:
+  handler: src/modules/pets/function/petHandler.remove
+  events:
+    - http:
+        method: delete
+        path: delete-pet/{petId}
+        cors: true
