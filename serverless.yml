@@ -1,5 +1,5 @@
-# org: caotran
-# app: manage-pet-serverless
+org: hung1007
+app: manage-pet-serverless
 service: manage-pet-serverless
 
 # Add the serverless-webpack plugin
